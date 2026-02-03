@@ -13,3 +13,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
+
+  welcome2:
+    name: Welcome2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
